@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183e32">
+  <meta name="description" content="Fresh paan, fine mukhwas and wedding paan catering from Shyam Pan Corner.">
+  <link rel="icon" type="image/png" href="assets/shyam-paan-logo.png">
+  <title>Shyam Pan Corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Shyam Pan Corner home"><img class="brand-mark" src="assets/shyam-paan-logo.png" alt=""><span>Shyam Pan Corner<small>EST. WITH LOVE</small></span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a href="#shop">The shop</a><a href="#local-delivery">Local delivery</a><a href="#catering">Catering</a><a href="#contact">Get in touch</a></nav>
+    <button class="cart-trigger" id="cart-trigger" aria-label="Open cart"><span class="bag-icon" aria-hidden="true">⌑</span><span>Bag</span><span class="cart-count" id="cart-count">0</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-photo" src="assets/paan-catering.jpg" alt="A traditional paan and mukhwas spread arranged for a celebration">
+      <div class="hero-shade"></div>
+      <div class="hero-copy"><span class="eyebrow light">A little tradition. A lot of love.</span><h1 id="hero-title">Make room<br>for <em>one more.</em></h1><p>Fresh paan, thoughtful little treats, and a finishing touch your guests will remember.</p><a class="button button-cream" href="#shop">Explore the counter <span aria-hidden="true">↗</span></a></div>
+      <div class="hero-note"><span class="note-dot"></span> Made fresh, served with warmth</div>
+      <div class="hero-index">01 <span></span> A sweet ending, always</div>
+    </section>
+
+    <section class="shop section-wrap" id="shop">
+      <div class="section-heading"><div><span class="eyebrow">From our counter</span><h2>Good things, <em>made fresh.</em></h2></div><div class="shop-note"><p>Little indulgences for right now<br>and every celebration.</p><a class="menu-download" href="paan-varieties-menu.pdf" download>Download the 10-variety paan menu <span aria-hidden="true">↓</span></a></div></div>
+      <div class="catalog-tools"><div class="filters" role="group" aria-label="Filter products"><button class="filter-chip active" data-category="All">Everything</button><button class="filter-chip" data-category="Paan">Paan</button><button class="filter-chip" data-category="Mukhwas">Mukhwas</button><button class="filter-chip" data-category="Drinks">Drinks</button><button class="filter-chip" data-category="Catering">Catering</button></div><div class="catalog-controls"><label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find something…" aria-label="Search products"></label><select id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="popular">Most loved</option></select></div></div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No little luxuries found. Try another search.</p>
+    </section>
+
+    <section class="local-delivery" id="local-delivery" aria-labelledby="delivery-title">
+      <div class="delivery-story"><span class="eyebrow">Just around the corner</span><h2 id="delivery-title">Your everyday<br>favourites, <em>at your door.</em></h2><p>Fresh paan, mukhwas and little pick-me-ups, delivered to homes within 2 km of our counter.</p><a class="text-link delivery-link" href="#shop">Shop daily favourites <span aria-hidden="true">↗</span></a></div>
+      <div class="delivery-options"><article class="delivery-option"><span class="delivery-option-index">01 <span>THE EASY WAY</span></span><div class="delivery-icon" aria-hidden="true">↗</div><h3>To your door</h3><p>Choose delivery at checkout and share your address. We’ll confirm availability and any delivery charge on WhatsApp.</p><span class="delivery-range">WITHIN 2 KM</span></article><article class="delivery-option pickup-option"><span class="delivery-option-index">02 <span>WHENEVER YOU LIKE</span></span><div class="delivery-icon" aria-hidden="true">⌂</div><h3>Pick up at the counter</h3><p>Order ahead, then swing by and collect your favourites fresh.</p><span class="delivery-range">COUNTER PICKUP</span></article></div>
+    </section>
+
+    <section class="catering" id="catering">
+      <div class="catering-copy"><span class="eyebrow light">For the big, beautiful days</span><h2>A paan counter<br>worthy of <em>your people.</em></h2><p>Give your wedding guests a moment to gather around. We bring a beautifully prepared paan experience, made fresh and served with care.</p><a href="#contact" class="text-link">Plan your celebration <span aria-hidden="true">↗</span></a></div>
+      <div class="catering-detail"><span class="detail-number">01 / 03</span><div class="detail-rule"></div><p>Weddings<br>Family celebrations<br>Something worth celebrating</p><span class="detail-seal">S<br>P</span></div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contact">
+      <div class="contact-heading"><span class="eyebrow">A note, an occasion, a question</span><h2>We'd love to<br><em>hear from you.</em></h2><p>Wedding date on your mind? Tell us a little and we’ll be in touch.</p><a class="contact-phone" href="https://wa.me/918287966106">WhatsApp us <span aria-hidden="true">↗</span></a></div>
+      <form class="contact-form" id="contact-form"><label>Your name<input name="name" autocomplete="name" required placeholder="The name we should know you by"></label><div class="form-row"><label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><label>What’s on your mind?<select name="subject" required><option value="" disabled selected>Choose one</option><option>Wedding catering</option><option>Product question</option><option>Something else</option></select></label></div><label>Your message<textarea name="message" required rows="3" placeholder="A few details help us make it special…"></textarea></label><button class="button button-green" type="submit">Send your note <span aria-hidden="true">↗</span></button><p class="form-feedback" id="contact-feedback" role="status" aria-live="polite"></p></form>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><img class="brand-mark" src="assets/shyam-paan-logo.png" alt=""><span>Shyam Pan Corner<small>MADE FRESH, SHARED WITH LOVE</small></span></a><span>Good things are better shared.</span><a href="https://wa.me/918287966106">Find us on WhatsApp ↗</a></footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag" aria-hidden="true"><div class="drawer-heading"><div><span class="eyebrow">Your selection</span><h2>Your bag<span class="bag-count-label" id="bag-count-label"></span></h2></div><button class="icon-button" id="close-cart" aria-label="Close bag">×</button></div><div class="cart-lines" id="cart-lines"></div><div class="cart-footer"><div class="subtotal-row"><span>Subtotal</span><strong id="cart-subtotal">₹0</strong></div><p>Choose nearby delivery or counter pickup at checkout. Any delivery charge is confirmed on WhatsApp.</p><button class="button button-green checkout-trigger" id="checkout-trigger" disabled>Continue to checkout <span aria-hidden="true">↗</span></button></div></aside>
+
+  <section class="checkout-view" id="checkout-view" hidden aria-labelledby="checkout-title"><div class="checkout-shell"><button class="back-link" id="back-to-shop">← <span>Back to the shop</span></button><div class="checkout-columns"><div class="checkout-main"><span class="eyebrow">Almost yours</span><h1 id="checkout-title">One last <em>little thing.</em></h1><p class="checkout-intro">Review your order, choose delivery or pickup, then scan to pay by UPI. Any delivery charge is confirmed separately.</p><div class="checkout-items" id="checkout-items"></div><div class="checkout-total"><span>Total to pay</span><strong id="checkout-total">₹0</strong></div><fieldset class="fulfillment-options"><legend>How would you like it?</legend><div class="fulfillment-cards"><label class="fulfillment-choice selected"><input type="radio" name="fulfillment" value="delivery" checked><span><strong>Deliver to me</strong><small>Within 2 km</small></span></label><label class="fulfillment-choice"><input type="radio" name="fulfillment" value="pickup"><span><strong>Counter pickup</strong><small>Collect when ready</small></span></label></div></fieldset><div class="delivery-details" id="delivery-details"><label class="checkout-address">Delivery address<textarea id="delivery-address" autocomplete="street-address" rows="2" placeholder="House / flat, street, area"></textarea></label><label class="radius-check"><input type="checkbox" id="within-radius"><span>My address is within 2 km of the shop.</span></label><p class="delivery-fee-note">We’ll confirm availability and any delivery charge on WhatsApp.</p></div><label class="checkout-name">Your name <span>(optional)</span><input id="customer-name" autocomplete="name" placeholder="So we know who to thank"></label><label class="checkout-phone">WhatsApp number <span>(for order updates)</span><input id="customer-phone" type="tel" autocomplete="tel" placeholder="Your phone number"></label></div><div class="payment-card"><span class="eyebrow">Pay with any UPI app</span><div class="qr-frame"><img id="payment-qr" alt="UPI payment QR code for this order"></div><p class="payment-note">Scan and pay using any UPI app. After paying, tap below to confirm your order.</p><span class="upi-id">8287966106@upi <span>·</span> Shyam Pan Corner</span><button class="button button-green whatsapp-confirm" id="whatsapp-confirm">Confirm order on WhatsApp <span aria-hidden="true">↗</span></button><p class="payment-footnote">Your order is confirmed with us on WhatsApp.</p></div></div></div></section>
+
+  <button class="assistant-launch" id="assistant-launch" aria-label="Ask the shop assistant" aria-expanded="false"><span class="assistant-launch-mark">SP</span><span>Ask us</span></button>
+  <section class="assistant-panel" id="assistant-panel" aria-label="Shop assistant" hidden>
+    <header class="assistant-header"><div><span class="assistant-kicker">SHYAM PAN CORNER</span><h2>Shop assistant</h2><p>Answers from our menu and shop details</p></div><button class="assistant-close" id="assistant-close" aria-label="Close assistant">×</button></header>
+    <div class="assistant-messages" id="assistant-messages" aria-live="polite" aria-relevant="additions text"><div class="assistant-message assistant-reply">Hello! I can help with paan varieties, prices, local delivery, and wedding catering.</div></div>
+    <div class="assistant-suggestions" id="assistant-suggestions"><button type="button">What paan varieties do you offer?</button><button type="button">Do you deliver to my area?</button><button type="button">Tell me about wedding catering.</button></div>
+    <form class="assistant-form" id="assistant-form"><label class="visually-hidden" for="assistant-input">Ask a question</label><input id="assistant-input" name="question" autocomplete="off" placeholder="Ask about our menu…" required><button type="submit" aria-label="Send question">↑</button></form>
+    <a class="assistant-support" href="https://wa.me/918287966106" target="_blank" rel="noopener">Need a person? WhatsApp us ↗</a>
+  </section>
+  <script type="module" src="assistant.js"></script>
+</body>
+</html>
